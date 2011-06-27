@@ -1,4 +1,5 @@
 require 'inherited_resources'
+require 'jquery-rails'
 
 module KrugForum
   class Engine < Rails::Engine

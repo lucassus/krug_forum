@@ -3,6 +3,7 @@ PATH
   specs:
     krug_forum (0.0.1)
       inherited_resources
+      jquery-rails
 
 GEM
   remote: http://rubygems.org/
@@ -58,6 +59,9 @@ GEM
     inherited_resources (1.2.2)
       has_scope (~> 0.5.0)
       responders (~> 0.6.0)
+    jquery-rails (1.0.12)
+      railties (~> 3.0)
+      thor (~> 0.14)
     linecache19 (0.5.12)
       ruby_core_source (>= 0.1.4)
     mail (2.3.0)

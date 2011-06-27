@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.version = "0.0.1"
 
   s.add_dependency "inherited_resources"
+  s.add_dependency "jquery-rails"
 
   s.add_development_dependency "rails3-generators"
   s.add_development_dependency "rspec"
