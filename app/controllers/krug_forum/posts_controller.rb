@@ -4,7 +4,7 @@ module KrugForum
 
     def create
       @post = Post.new(params[:post])
-      @post.user = current_user
+      @post.user = _current_user
 
       create! { krug_forum.posts_path }
     end
