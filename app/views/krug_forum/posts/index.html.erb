@@ -4,6 +4,7 @@
   <tr>
     <th>Subject</th>
     <th>Body</th>
+    <th>User</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,6 +14,7 @@
   <tr>
     <td><%= post.subject %></td>
     <td><%= post.body %></td>
+    <td><%= post.user.try(:email) %></td>
     <td><%= link_to 'Show', krug_forum.post_path(post) %></td>
     <td><%= link_to 'Edit', krug_forum.edit_post_path(post) %></td>
     <td><%= link_to 'Destroy', krug_forum.post_path(post), confirm: 'Are you sure?', method: :delete %></td>
