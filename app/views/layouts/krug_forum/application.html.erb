@@ -8,6 +8,11 @@
 </head>
 <body>
 
+  <div id="menu">
+    <%= link_to 'Application root', main_app.root_path %> |
+    <%= link_to 'Engine root', krug_forum.root_path %>
+  </div>
+
 <%= yield %>
 
 </body>

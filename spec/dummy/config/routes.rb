@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => 'index#index'
   mount KrugForum::Engine => "/krug_forum"
 
   # include named routes in the test env, see: https://github.com/rails/rails/issues/1265
