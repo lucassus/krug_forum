@@ -10,7 +10,15 @@
 
   <div id="menu">
     <%= link_to 'Application root', main_app.root_path %> |
-    <%= link_to 'Engine root', krug_forum.root_path %>
+    <%= link_to 'Engine root', krug_forum.root_path %> |
+
+    <% if user_signed_in? %>
+      Email: <%= current_user.email %> |
+      <%= link_to 'Logout', destroy_user_session_path %>
+    <% else %>
+      <%= link_to 'Login', new_user_session_path %> |
+      <%= link_to 'Register', new_user_registration_path %>
+    <% end %>
   </div>
 
 <%= yield %>

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "krug_forum/posts/show.html.erb" do
   before(:each) do
-    @post = assign(:post, stub_model(KrugForum::Post,
+  @post = assign(:post, stub_model(KrugForum::Post,
       :subject => "Subject",
       :body => ""
     ))
