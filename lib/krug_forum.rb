@@ -5,7 +5,7 @@ module KrugForum
     if respond_to?(:current_user)
       current_user
     else
-      raise "Cannot find :current_user method"
+      nil
     end
   end
 
