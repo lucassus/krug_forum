@@ -7,6 +7,8 @@ Gem::Specification.new do |s|
   s.files = Dir["lib/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.version = "0.0.1"
 
+  s.add_dependency "inherited_resources"
+
   s.add_development_dependency "rails3-generators"
   s.add_development_dependency "rspec"
   s.add_development_dependency "rspec-rails"

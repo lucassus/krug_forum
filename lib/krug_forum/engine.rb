@@ -1,3 +1,5 @@
+require 'inherited_resources'
+
 module KrugForum
   class Engine < Rails::Engine
     isolate_namespace KrugForum
