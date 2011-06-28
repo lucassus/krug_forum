@@ -1,4 +1,5 @@
 require "krug_forum/engine"
+require "krug_forum/extensions"
 
 module KrugForum
   DEFAULT_CURRENT_USER = Proc.new do
