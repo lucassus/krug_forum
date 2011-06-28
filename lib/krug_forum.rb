@@ -13,4 +13,11 @@ module KrugForum
     @current_user = block if block
     @current_user || DEFAULT_CURRENT_USER
   end
+
+  DEFAULT_LAYOUT = 'krug_forum/application'
+
+  def self.layout(layout = nil)
+    @layout = layout if layout
+    @layout || DEFAULT_LAYOUT
+  end
 end

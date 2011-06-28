@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>KrugForum</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>KrugForum</title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-  <div id="menu">
-    <%= link_to 'Application root', main_app.root_path %> |
-    <%= link_to 'Engine root', krug_forum.root_path %>
-  </div>
+    <div id="menu">
+      <%= link_to 'Application root', main_app.root_path %> |
+      <%= link_to 'Engine root', krug_forum.root_path %>
+    </div>
 
-<%= yield %>
+    <%= yield %>
 
-</body>
+  </body>
 </html>
